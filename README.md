@@ -1,22 +1,35 @@
-# Heralds of the Cemí
+# Heralds of the Cemí / Heraldos del Cemí
 
-A contemporary fantasy by **Luis M. Minier** — now available on Amazon.
+**One cinematic, bilingual book website** for Luis M. Minier's contemporary fantasy novel.
 
-- Kindle: https://www.amazon.com/Heralds-Cemi-Luis-Minier-ebook/dp/B0HNF1DJRP
-- Hardcover: https://www.amazon.com/Heralds-Cemi-Luis-M-Minier/dp/B0HNDVPHY2
+Live site: https://anharmoniclabs.github.io/HeraldsOfTheCemi/
 
-## Synopsis
+## Single-page structure
 
-At twenty-five, JC is striving to complete a mural project built on augmented reality while managing rent in the Bronx. Then his equipment starts picking up an eight-second audio loop that dulls both sound and emotion, and a coin he inherited begins to radiate warmth in his palm — the same pattern keeps resurfacing.
+All public-facing content is on **index.html**. Navigation scrolls to sections of that page rather than opening separate author or edition pages:
 
-This leads him into a family legacy intertwined with Taíno ancestral echoes, and into contact with Aperture, an organization that has long been converting human feelings into a commodity. Alongside his friend Manny, a conero, and the people who raised him, JC journeys through the Bronx and Santo Domingo to uncover the truth — while his undiagnosed ADHD complicates his work, his relationships, and his ability to trust his own perceptions.
+1. Parallax hero with the approved English and Spanish book covers.
+2. English and Spanish synopses (story, JC, the signal, the coin, Aperture, Bronx/Santo Domingo).
+3. Both full original covers together with confirmed English retail links.
+4. Story themes and the author's approved portrait and biography.
 
-**Heralds of the Cemí** explores Dominican diaspora, Taíno heritage, and the music and everyday connections of the Bronx — a story about family memory, neurodivergence, community resilience, and the price of being acknowledged.
+The original English and Spanish covers are displayed without AI remixes or placeholder images. The site includes a responsive layout and reduced-motion support.
 
-## Site
+## Files
 
-The promotional landing page lives in `index.html` and is deployed to GitHub Pages:
+- `index.html` — semantic content and bilingual SEO metadata.
+- `assets/site.css` — responsive design and layered scroll effects.
+- `assets/site.js` — lightweight scroll parallax, progress and reveal behavior.
 
-https://anharmoniclabs.github.io/HeraldsOfTheCemi/
+The current original cover and portrait images are served from hosted image URLs supplied by the author and stored in the page source. For long-term asset independence, keep archival copies of each original PNG.
 
-After pushing, enable it once in **Settings → Pages → Build and deployment → Source: GitHub Actions**.
+## Buy links
+
+- English Kindle: https://www.amazon.com/dp/B0HNF1DJRP
+- English hardcover: https://www.amazon.com/dp/B0HNDVPHY2
+
+A Spanish retail link has **not** been verified and is intentionally not invented.
+
+## Deploy
+
+GitHub Pages publishes this repository from its configured Pages deployment source. After updates to `main`, check the repository's Settings → Pages and Actions to verify publication.
